@@ -66,10 +66,10 @@
                 };
                 lower_layer {
 // ----------------------------------------------------------------------------------------
-//| LGUI/CAPS |  *  |  7 |  8  |  9  |  +  |    | SRST | MUTE | VOLD | VOLU | ____ | RGUI |
-//| CTRL/MENU |  /  |  4 |  5  |  6  |  -  |    |  =   | LEFT | DOWN |  UP  | RGHT | CTRL |
-//| LALT/=    |  0  |  1 |  4  |  3  |  .  |    |  ls  | HOME | PGDN | PGUP | END  | RALT |
-//                       | ADJ | ___ | ___ |    | ____ | ____ | ADJ  |
+//| LGUI/CAPS |  *  |  7  |  8  |  9  |  +  |    | SRST | MUTE | VOLD | VOLU | ____ | RGUI |
+//| CTRL/MENU |  /  |  4  |  5  |  6  |  -  |    |  =   | LEFT | DOWN |  UP  | RGHT | CTRL |
+//| LALT/=    |  0  |  1  |  4  |  3  |  .  |    |  ls  | HOME | PGDN | PGUP | END  | RALT |
+//                        | ADJ | ___ | ___ |    | ____ | ____ | ADJ  |
                         bindings = <
  &mt LWIN  CAPS  &kp KP_MULTIPLY &kp N7 &kp N8  &kp N9  &kp PLUS               &kp LG(LS(S)) &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP  &kp N0    &kp RWIN  
  &mt LCTRL K_APP &kp KP_SLASH    &kp N4 &kp N5  &kp N6  &kp MINUS              &kp EQUAL     &kp LEFT   &kp DOWN     &kp UP        &kp RIGHT &kp RALT
@@ -94,7 +94,7 @@
                 };
                 adjust_layer {
 // ------------------------------------------------------------------------------------
-//| BLDR   |      |     |     |     |      |   |      |     |     |     |     | BLDR  |
+//| BTLDR  |      |     |     |     |      |   |      |     |     |     |     | BTLDR |
 //| BTCLR  | BT0  | BT1 | BT2 | BT3 | BT4  |   | BT4  | BT3 | BT2 | BT1 | BT0 | BTCLR |
 //| pwrOFF | NMLK |     |     |     | CHBT |   | CHBT |     |     |     |     |       |
 //                      |     |     |      |   |      |     |     |
