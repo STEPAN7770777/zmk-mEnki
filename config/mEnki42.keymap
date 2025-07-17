@@ -93,15 +93,15 @@
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
                 adjust_layer {
-// -----------------------------------------------------------------------------------------
-//| BLDR |     |     |     |     |     |   |     |     |     |     |     | BLDR  |
-//| BTCLR| BT0 | BT1 | BT2 | BT3 | BT4 |   | BT4 | BT3 | BT2 | BT1 | BT0 | BTCLR |
-//|pwrOFF|NUMLK|     |     |     |     |   |     |     |     |     |     |       |
-//                   |     |     |     |   |     |     |     |
+// ------------------------------------------------------------------------------------
+//| BLDR   |      |     |     |     |      |   |      |     |     |     |     | BLDR  |
+//| BTCLR  | BT0  | BT1 | BT2 | BT3 | BT4  |   | BT4  | BT3 | BT2 | BT1 | BT0 | BTCLR |
+//| pwrOFF | NMLK |     |     |     | CHBT |   | CHBT |     |     |     |     |       |
+//                      |     |     |      |   |      |     |     |
                         bindings = <
 &bootloader       &none        &none        &none        &none        &none                    &none        &none        &none        &none        &none        &bootloader
 &bt BT_CLR        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR
-&ext_power EP_OFF &kp KP_NUM   &none        &none        &none        &check_bat               &none        &none        &none        &none        &none        &ext_power EP_OFF 
+&ext_power EP_OFF &kp KP_NUM   &none        &none        &none        &check_bat               &check_bat   &none        &none        &none        &none        &ext_power EP_OFF 
                                             &trans       &none        &trans       &kp C_MUTE  &trans       &none        &trans
                         >;
                         sensor-bindings = <&inc_dec_kp &numdot &grtsgn>;
