@@ -1,5 +1,5 @@
 # ZMK firmware for mEnki
-This branch is intended for the regular version of the keyboard. For V2 use [another branch](https://github.com/aroum/zmk-mEnki/tree/mEnki42_v2). The bootloader and compiled firmware can be downloaded in the [releases section](https://github.com/aroum/zmk-mEnki/releases). You can change keymap using [this tool](https://nickcoutsos.github.io/keymap-editor/).
+This branch is intended only for V2 version with encoder. You can change keymap using [this tool](https://nickcoutsos.github.io/keymap-editor/).
 
 
 ![image](pics/mEnki.png)
@@ -27,4 +27,8 @@ The mEnki keyboard includes an RGB indicator with specific color-coded signals t
 - **USB Connected**: Flashes **purple** 1 time when the keyboard is connected via USB.
 
 This RGB indicator setup provides quick, color-coded feedback on the keyboard’s status for efficient monitoring.
+
+## Details of hardware
+
+- **Encoder model**: EVQWKL001
 
