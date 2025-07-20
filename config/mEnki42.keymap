@@ -19,7 +19,7 @@
 
 / {
     behaviors {
-        mt_spc: mod_tap {
+        mt_spc: mod_tap_space {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced"; // Change is here
@@ -27,12 +27,12 @@
             bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap-Space";
         };
-        mt_bckspc: mod_tap {
+        mt_bckspc: mod_tap_backspace {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced"; // Change is here
             tapping-term-ms = <200>;
-            //quick_tap_ms = <220>; // Change is here
+            quick_tap_ms = <220>; // Change is here
             bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap-Backspace";
         };
