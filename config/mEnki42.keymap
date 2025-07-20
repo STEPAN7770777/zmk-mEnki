@@ -16,7 +16,6 @@
 #define ADJ 3
 
 &lt { quick_tap_ms = <220>; };
-&mt { quick_tap_ms = <0>; };
 
 / {
     behaviors {
@@ -25,7 +24,6 @@
             #binding-cells = <2>;
             flavor = "balanced"; // Change is here
             tapping-term-ms = <200>;
-            quick_tap_ms = <-200>;
             bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap";
         };
