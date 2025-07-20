@@ -25,16 +25,16 @@
             flavor = "balanced"; // Change is here
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
-            display-name = "Mod-Tap";
+            display-name = "Mod-Tap-Space";
         };
         mt_bckspc: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced"; // Change is here
             tapping-term-ms = <200>;
-            quick_tap_ms = <220>; // Change is here
+            //quick_tap_ms = <220>; // Change is here
             bindings = <&kp>, <&kp>;
-            display-name = "Mod-Tap";
+            display-name = "Mod-Tap-Backspace";
         };
     };
 };
