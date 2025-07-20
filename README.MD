@@ -1,5 +1,5 @@
 # ZMK firmware for mEnki
-This branch is intended only for V2 version with encoder. You can change keymap using [this tool](https://nickcoutsos.github.io/keymap-editor/).
+This fork is intended only for V2 version with encoder.
 
 
 ![image](pics/mEnki.png)

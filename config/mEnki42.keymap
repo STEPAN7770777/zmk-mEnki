@@ -16,7 +16,20 @@
 #define ADJ 3
 
 &lt { quick_tap_ms = <220>; };
-&mt { quick_tap_ms = <220>; };
+
+/ {
+    behaviors {
+        mt: mt_qt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick_tap_ms = <220>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap";
+        };
+    };
+};
 
 / {
     macros {
@@ -60,7 +73,7 @@
   &mt LWIN  RBKT  &kp Q &kp W &kp E &kp R &kp T              &kp Y  &kp U  &kp I     &kp O   &kp P    &mt RWIN  LBKT 
   &mt LCTRL GRAVE &kp A &kp S &kp D &kp F &kp G              &kp H  &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
   &mt LALT  BSLH  &kp Z &kp X &kp C &kp V &kp B              &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &mt RALT  MINUS
-        &lt RSE TAB &mt LSHFT SPACE &lt LWR RET  &kp C_MUTE  &lt LWR ESC &mt RSHFT BSPC &lt RSE DEL
+        &lt RSE TAB &mt LSHFT SPACE &lt LWR RET  &kp C_MUTE  &lt LWR ESC &mt_qt RSHFT BSPC &lt RSE DEL
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
