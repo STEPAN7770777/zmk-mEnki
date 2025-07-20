@@ -19,7 +19,7 @@
 
 / {
     behaviors {
-        mt: mt_qt {
+        mt_qt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
