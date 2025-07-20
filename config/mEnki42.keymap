@@ -25,7 +25,7 @@
             #binding-cells = <2>;
             flavor = "balanced"; // Change is here
             tapping-term-ms = <200>;
-            quick_tap_ms = <0>;
+            quick_tap_ms = <220>; // Change is here
             bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap";
         };
