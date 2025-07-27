@@ -86,16 +86,16 @@
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
                 lower_layer {
-// ----------------------------------------------------------------------------------------
-//| LGUI/CAPS |  *  |  7  |  8  |  9  |  +  |    | SRST | MUTE | VOLD | VOLU | ____ | RGUI |
+// -----------------------------------------------------------------------------------------
+//| LGUI/CAPS |  *  |  7  |  8  |  9  |  +  |    | SRST | VOLD | VOLU | MUTE |      | RGUI |
 //| CTRL/MENU |  /  |  4  |  5  |  6  |  -  |    |  =   | LEFT | DOWN |  UP  | RGHT | CTRL |
 //| LALT/=    |  0  |  1  |  4  |  3  |  .  |    |  ls  | HOME | PGDN | PGUP | END  | RALT |
 //                        | ADJ | ___ | ___ |    | ____ | ____ | ADJ  |
                         bindings = <
- &mt LWIN  CAPS  &kp KP_MULTIPLY &kp N7 &kp N8  &kp N9  &kp PLUS               &kp LG(LS(S)) &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP  &kp N0    &kp RWIN  
- &mt LCTRL K_APP &kp KP_SLASH    &kp N4 &kp N5  &kp N6  &kp MINUS              &kp EQUAL     &kp LEFT   &kp DOWN     &kp UP        &kp RIGHT &kp RCTRL
- &mt LALT  EQUAL &kp N0          &kp N1 &kp N2  &kp N3  &kp KP_DOT             &kp LG(SPACE) &kp HOME   &kp PG_DN    &kp PG_UP     &kp END   &kp RALT
-                                   &lt ADJ TAB  &trans  &trans     &kp C_MUTE  &trans        &trans     &lt ADJ DEL
+ &mt LWIN  CAPS  &kp KP_MULTIPLY &kp N7 &kp N8  &kp N9  &kp PLUS               &kp LG(LS(S)) &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE  &none     &kp RWIN  
+ &mt LCTRL K_APP &kp KP_SLASH    &kp N4 &kp N5  &kp N6  &kp MINUS              &kp EQUAL     &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT &kp RCTRL
+ &mt LALT  EQUAL &kp N0          &kp N1 &kp N2  &kp N3  &kp KP_DOT             &kp LG(SPACE) &kp HOME     &kp PG_DN    &kp PG_UP   &kp END   &kp RALT
+                                   &lt ADJ TAB  &trans  &trans     &kp C_MUTE  &trans        &trans       &lt ADJ DEL
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
@@ -114,11 +114,11 @@
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
                 adjust_layer {
-// ------------------------------------------------------------------------------------
-//| BTLDR  |      |     |     |     |      |   |      |     |     |     |     | BTLDR |
-//| BTCLR  | BT0  | BT1 | BT2 | BT3 | BT4  |   | BT4  | BT3 | BT2 | BT1 | BT0 | BTCLR |
-//| pwrOFF | NMLK |     |     |     | CHBT |   | CHBT |     |     |     |     |       |
-//                      |     |     |      |   |      |     |     |
+// --------------------------------------------------------------------------------------
+//| BOTLDR |      |     |     |     |      |    |      |     |     |     |     | BOTLDR |
+//| BTCLR  | BT0  | BT1 | BT2 | BT3 | BT4  |    | BT4  | BT3 | BT2 | BT1 | BT0 | BTCLR  |
+//| pwrOFF | NMLK |     |     |     | CHBT |    | CHBT |     |     |     |     | pwrOFF |
+//                      |     |     |      |    |      |     |     |
                         bindings = <
 &bootloader       &none        &none        &none        &none        &none                    &none        &none        &none        &none        &none        &bootloader
 &bt BT_CLR        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR
