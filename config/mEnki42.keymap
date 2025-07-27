@@ -92,9 +92,9 @@
 //| LALT/=    |  0  |  1  |  4  |  3  |  .  |    |  ls  | HOME | PGDN | PGUP | END  | RALT |
 //                        | ADJ | ___ | ___ |    | ____ | ____ | ADJ  |
                         bindings = <
- &mt LWIN  CAPS  &kp KP_MULTIPLY &kp N7 &kp N8  &kp N9  &kp PLUS               &kp LG(LS(S)) &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE  &none     &kp RWIN  
- &mt LCTRL K_APP &kp KP_SLASH    &kp N4 &kp N5  &kp N6  &kp MINUS              &kp EQUAL     &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT &kp RCTRL
- &mt LALT  EQUAL &kp N0          &kp N1 &kp N2  &kp N3  &kp KP_DOT             &kp LG(SPACE) &kp HOME     &kp PG_DN    &kp PG_UP   &kp END   &kp RALT
+ &mt LWIN  CAPS  &kp KP_MULTIPLY &kp N7 &kp N8  &kp N9  &kp PLUS               &kp LG(LS(S)) &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &none     &kp RWIN  
+ &mt LCTRL K_APP &kp KP_SLASH    &kp N4 &kp N5  &kp N6  &kp MINUS              &kp EQUAL     &kp LEFT     &kp DOWN     &kp UP     &kp RIGHT &kp RCTRL
+ &mt LALT  EQUAL &kp N0          &kp N1 &kp N2  &kp N3  &kp KP_DOT             &kp LG(SPACE) &kp HOME     &kp PG_DN    &kp PG_UP  &kp END   &kp RALT
                                    &lt ADJ TAB  &trans  &trans     &kp C_MUTE  &trans        &trans       &lt ADJ DEL
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
